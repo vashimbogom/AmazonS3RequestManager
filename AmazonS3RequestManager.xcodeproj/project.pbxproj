@@ -227,7 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmazonS3RequestManager/Pods-AmazonS3RequestManager-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D45996DCB4C888572937337A /* Embed Pods Frameworks */ = {
@@ -387,42 +387,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.10;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		92EF4DCB1AA64CC1002C68D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C654EFF0C0FCD904730ED696 /* Pods-AmazonS3RequestManagerTests.debug.xcconfig */;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AmazonS3RequestManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AnthonyMDev.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		92EF4DCC1AA64CC1002C68D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1B0C81F4198B8AD86110A10 /* Pods-AmazonS3RequestManagerTests.release.xcconfig */;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AmazonS3RequestManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AnthonyMDev.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
