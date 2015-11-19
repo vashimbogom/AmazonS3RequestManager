@@ -6,12 +6,13 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/AnthonyMDev/AmazonS3RequestManager'
   s.social_media_url = 'http://twitter.com/AnthonyMDev'
   s.authors = { 'Anthony Miller' => 'AnthonyMDev@gmail.com' }
-  s.source = { :git => 'https://github.com/AnthonyMDev/AmazonS3RequestManager.git', :tag => s.version }
-  s.frameworks = 'Foundation', 'MobileCoreServices'
+  s.source       = { :git => "https://github.com/vashimbogom/AmazonS3RequestManager.git", :tag => "0.0.1" }
+  s.frameworks = 'Foundation'
 
-  s.ios.deployment_target = '8.0'
+  s.platform     = :osx, "10.9"
 
   s.source_files = 'AmazonS3RequestManager/*.{h,m,swift}'
+  s.exclude_files = "AmazonS3RequestManager/Info.plist"
 
   s.requires_arc = true
 
