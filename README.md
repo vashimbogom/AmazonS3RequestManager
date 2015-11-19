@@ -1,5 +1,22 @@
 # AmazonS3RequestManager
-A Alamofire based request manager that serializes requests to the AWS S3 (Amazon Simple Storage Solution). Based on AFAmazonS3Manager
+[![Version](https://img.shields.io/cocoapods/v/AmazonS3RequestManager.svg?style=flat)](http://cocoapods.org/pods/AmazonS3RequestManager)
+[![License](https://img.shields.io/cocoapods/l/AmazonS3RequestManager.svg?style=flat)](http://cocoapods.org/pods/AmazonS3RequestManager)
+[![Platform](https://img.shields.io/cocoapods/p/AmazonS3RequestManager.svg?style=flat)](http://cocoapods.org/pods/AmazonS3RequestManager)
+
+An Alamofire based request manager that serializes requests to the AWS S3 (Amazon Simple Storage Solution).
+
+`AmazonS3RequestManager` also includes a request serializer that creates `NSURLRequest` objects for use with any other networking methods.
+
+## Features
+
+- [x] Request Serialization
+- [x] Response Validation
+- [x] Amazon S3 Response Error Parsing
+- [x] Access Control List (ACL) Management
+- [x] Support for Amazon S3 Subresources
+- [x] Support for Amazon S3 Storage Classes
+- [x] Comprehensive Unit Test Coverage
+- [x] [Complete Documentation](http://cocoadocs.org/docsets/AmazonS3RequestManager)
 
 ## Installation
 
@@ -14,8 +31,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'AmazonS3RequestManager', '~> 0.5'
-```
+// For Swift 2.0
+pod 'AmazonS3RequestManager', '~> 0.8'
 
 Then, run the following command:
 
@@ -49,6 +66,14 @@ Saving Objects To File:
 ### Delete Objects
 
     amazonS3Manager.deleteObject("myFolder/fileName.jpg")
+
+## Response Serialization
+`AmazonS3RequestManager` includes a custom data response serializer that parses errors from the Amazon S3 Service.
+
+    amazonS3Manager.getObject("myFoler/fileName.jpg")
+      .responseS3Data { (response) -> Void in
+        // Handle Response Data or Error
+    }
 
 ## Access Control Lists (ACL)
 

@@ -10,7 +10,18 @@
 		0D80828C6F42FB5C5FF4C100 /* Pods_AmazonS3RequestManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71C24E6A28FD552DA5FC6AF /* Pods_AmazonS3RequestManager.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		922820BB1AA8FD9900C51349 /* AmazonS3SignatureHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 922820B91AA8FD9900C51349 /* AmazonS3SignatureHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		922820BC1AA8FD9900C51349 /* AmazonS3SignatureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 922820BA1AA8FD9900C51349 /* AmazonS3SignatureHelpers.m */; };
+
+		922820C01AA909C800C51349 /* AmazonS3SignatureHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 922820BA1AA8FD9900C51349 /* AmazonS3SignatureHelpers.m */; };
+		922820C21AA90AEC00C51349 /* AmazonS3RequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 92EF4DB61AA64CC1002C68D2 /* AmazonS3RequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		922820C31AA90AF200C51349 /* AmazonS3SignatureHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 922820B91AA8FD9900C51349 /* AmazonS3SignatureHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92367F911BC361B8007F0A1E /* AmazonS3Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92367F901BC361B8007F0A1E /* AmazonS3Error.swift */; settings = {ASSET_TAGS = (); }; };
+		92367F931BC36642007F0A1E /* AmazonS3ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92367F921BC36642007F0A1E /* AmazonS3ResponseSerialization.swift */; settings = {ASSET_TAGS = (); }; };
 		925ABF3E1B276464003B9900 /* AmazonS3ACL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925ABF3D1B276464003B9900 /* AmazonS3ACL.swift */; };
+		925ABF401B2768DA003B9900 /* AmazonS3ACLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925ABF3F1B2768DA003B9900 /* AmazonS3ACLTests.swift */; };
+		92805B4B1BCEDB0800F3C4B8 /* AmazonS3RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92805B4A1BCEDB0800F3C4B8 /* AmazonS3RequestSerializer.swift */; settings = {ASSET_TAGS = (); }; };
+		92805B4D1BCEDF7400F3C4B8 /* AmazonS3RequestSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92805B4C1BCEDF7400F3C4B8 /* AmazonS3RequestSerializerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		92A245351BC4516800802E48 /* AmazonS3ResponseSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A245341BC4516800802E48 /* AmazonS3ResponseSerializationTests.swift */; settings = {ASSET_TAGS = (); }; };
+
 		92EF4DB71AA64CC1002C68D2 /* AmazonS3RequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 92EF4DB61AA64CC1002C68D2 /* AmazonS3RequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92EF4DCE1AA64FB1002C68D2 /* AmazonS3RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF4DCD1AA64FB1002C68D2 /* AmazonS3RequestManager.swift */; };
 /* End PBXBuildFile section */
@@ -22,8 +33,13 @@
 		87E3F9197DC24E8B008B2627 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922820B91AA8FD9900C51349 /* AmazonS3SignatureHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonS3SignatureHelpers.h; sourceTree = "<group>"; };
 		922820BA1AA8FD9900C51349 /* AmazonS3SignatureHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonS3SignatureHelpers.m; sourceTree = "<group>"; };
+		92367F901BC361B8007F0A1E /* AmazonS3Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3Error.swift; sourceTree = "<group>"; };
+		92367F921BC36642007F0A1E /* AmazonS3ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3ResponseSerialization.swift; sourceTree = "<group>"; };
 		925ABF3D1B276464003B9900 /* AmazonS3ACL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3ACL.swift; sourceTree = "<group>"; };
 		925ABF3F1B2768DA003B9900 /* AmazonS3ACLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3ACLTests.swift; sourceTree = "<group>"; };
+		92805B4A1BCEDB0800F3C4B8 /* AmazonS3RequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3RequestSerializer.swift; sourceTree = "<group>"; };
+		92805B4C1BCEDF7400F3C4B8 /* AmazonS3RequestSerializerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3RequestSerializerTests.swift; sourceTree = "<group>"; };
+		92A245341BC4516800802E48 /* AmazonS3ResponseSerializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonS3ResponseSerializationTests.swift; sourceTree = "<group>"; };
 		92EF4DB11AA64CC1002C68D2 /* AmazonS3RequestManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmazonS3RequestManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EF4DB51AA64CC1002C68D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92EF4DB61AA64CC1002C68D2 /* AmazonS3RequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonS3RequestManager.h; sourceTree = "<group>"; };
@@ -98,7 +114,10 @@
 			children = (
 				92EF4DB61AA64CC1002C68D2 /* AmazonS3RequestManager.h */,
 				92EF4DCD1AA64FB1002C68D2 /* AmazonS3RequestManager.swift */,
+				92805B4A1BCEDB0800F3C4B8 /* AmazonS3RequestSerializer.swift */,
 				925ABF3D1B276464003B9900 /* AmazonS3ACL.swift */,
+				92367F901BC361B8007F0A1E /* AmazonS3Error.swift */,
+				92367F921BC36642007F0A1E /* AmazonS3ResponseSerialization.swift */,
 				922820B91AA8FD9900C51349 /* AmazonS3SignatureHelpers.h */,
 				922820BA1AA8FD9900C51349 /* AmazonS3SignatureHelpers.m */,
 				92EF4DB41AA64CC1002C68D2 /* Supporting Files */,
@@ -118,8 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				92EF4DC31AA64CC1002C68D2 /* AmazonS3RequestManagerTests.swift */,
+				92805B4C1BCEDF7400F3C4B8 /* AmazonS3RequestSerializerTests.swift */,
 				925ABF3F1B2768DA003B9900 /* AmazonS3ACLTests.swift */,
 				92EF4DC11AA64CC1002C68D2 /* Supporting Files */,
+				92A245341BC4516800802E48 /* AmazonS3ResponseSerializationTests.swift */,
 			);
 			path = AmazonS3RequestManagerTests;
 			sourceTree = "<group>";
@@ -247,12 +268,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92367F911BC361B8007F0A1E /* AmazonS3Error.swift in Sources */,
 				925ABF3E1B276464003B9900 /* AmazonS3ACL.swift in Sources */,
+				92367F931BC36642007F0A1E /* AmazonS3ResponseSerialization.swift in Sources */,
 				922820BC1AA8FD9900C51349 /* AmazonS3SignatureHelpers.m in Sources */,
 				92EF4DCE1AA64FB1002C68D2 /* AmazonS3RequestManager.swift in Sources */,
+				92805B4B1BCEDB0800F3C4B8 /* AmazonS3RequestSerializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
+		92EF4DB81AA64CC1002C68D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				922820C01AA909C800C51349 /* AmazonS3SignatureHelpers.m in Sources */,
+				925ABF401B2768DA003B9900 /* AmazonS3ACLTests.swift in Sources */,
+				92EF4DC41AA64CC1002C68D2 /* AmazonS3RequestManagerTests.swift in Sources */,
+				92A245351BC4516800802E48 /* AmazonS3ResponseSerializationTests.swift in Sources */,
+				92805B4D1BCEDF7400F3C4B8 /* AmazonS3RequestSerializerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -385,6 +423,34 @@
 			};
 			name = Release;
 		};
+
+		92EF4DCB1AA64CC1002C68D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C654EFF0C0FCD904730ED696 /* Pods-AmazonS3RequestManagerTests.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AmazonS3RequestManagerTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnthonyMDev.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		92EF4DCC1AA64CC1002C68D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B0C81F4198B8AD86110A10 /* Pods-AmazonS3RequestManagerTests.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = AmazonS3RequestManagerTests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AnthonyMDev.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */

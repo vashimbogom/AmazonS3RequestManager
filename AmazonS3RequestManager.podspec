@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'Alamofire', '~> 3.0'
   s.dependency 'SWXMLHash', '~> 2.0'
+
 end
