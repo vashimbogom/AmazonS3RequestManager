@@ -9,7 +9,6 @@
 import Foundation
 
 import Alamofire
-import MobileCoreServices
 
 /**
 MARK: - AmazonS3RequestSerializer
